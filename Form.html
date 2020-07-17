@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container" id="container">    
+            <img src="Images/Banner.jpg" class="img-fluid" alt="Responsive image">
+            <div id="step1">
+                <h1 id="heading">Product Buildout</h1>
+                <p>Some quick questions to help us set up your store!</p>
+                <form> 
+                    <div class="form-group">
+                        <label for="emailInput"><b>Email address</b></label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                            <div id="invalidEmail" style="display: none;">
+                                Please provide a valid email address.
+                            </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="storeName"><b>What is your store name?</b></label>
+                        <input class="form-control" id="storeName" rows="1"></textarea>
+                            <div id="invalidStore" style="display: none;">
+                                Please provide a the name of your store.
+                            </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="buildOption"><b>Would you like us to build out your product listing?</b></label>
+                        <button type="button" class="btn btn-outline-dark mb-2 btn-block" id="buildOption1">Sure, I can provide a CSV of my products.</button>                                 
+                        <button type="button" class="btn btn-outline-dark mb-2 btn-block" id="buildOption2">No, I would like to build out my own products.</button>                                       
+                </form>   
+            </div>                  
+        </div>
+        <div id="step2a" style="display:none;">                
+            <h1 id="heading">We'd be Happy to Help</h1> 
+                <p>All we need to build out your products is a CSV. Instructions on obtaining a CSV can be found <a href="https://wiki.boutsy.com/howtocsv">here</a> if you are not sure how to get one!</p>
+            <form>                   
+                <div class="form-group">
+                    <label for="csvSubmit"><b>CSV Submit</b></label>           
+                    <input type="file" accept=".csv" class="form-control-file" id="csvSubmit" title="CSV File" required>                    
+                    <label for="specialReq" id="reqLabel"><b>Any special requirements?</b></label>
+                    <textarea class="form-control" id="SpecialReq" rows="3"></textarea>                      
+                </div>  
+                <div>
+                    <p><strong>Problems obtaining a CSV?</strong>
+                    <br>Let us know if you have any issues and we will get back to you ASAP. To contact us simply email <a href="mailto:Build@boutsy.com">Build@boutsy.com.</a> We are available at any time to answer questions or provide assistance.
+                </p>
+                </div>
+                <div> 
+                    <button type="submit" class="btn btn-dark mb-2 btn-block" id="submit-button">Submit</button>                   
+                </div>                                  
+            </form>               
+        </div> 
+        <div id="step2b" style="display:none;">                
+            <h1 id="heading">Info to Help You Out</h1>
+            <p><b>We are also available if you have any questions!</b>
+                <br>As soon as we are notified your store is ready we will check over your products and move you to your category. You can find a lot of useful information on how to update your store <a href="https://wiki.boutsy.com/">here!</a> 
+                For information on building out your products specifically, you can look under the <i>Building Products</i> tab on the side navigation bar. 
+                
+                <br><br>To contact us simply email <a href="mailto:Build@boutsy.com">Build@boutsy.com.</a> 
+                
+                <br><br><strong>You will need to notify us know when your build is complete!</strong>
+                        <br>When building our your store you will also have to set up <a href="https://wiki.boutsy.com/shipping">shipping</a> before we can make you live. 
+            As soon as we are notified that your store is ready we will double-check for any issues that might need addressed and if we don't find any problems we will move your store to it's proper category so you can start sellling on Boutsy!
+        </p>
+        <div> 
+            <button type="submit" class="btn btn-dark mb-2 btn-block" id="submit-button2">Click here to let us know you're building out your products!</button>              
+        </div>
+        </div>    
+        <button type="button" class="btn btn-dark mb-2 btn-block" id="back-button" style='display:none;'>Go Back</button>  
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="ShowHide.js"></script>
+        <footer>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+ #submit-button {
+    margin-top: 60px;
+} 
+body {
+    background-color: seashell;
+}
+#container{
+    min-height: 100vh;
+    background-color: white;
+}
+#buildOption1{
+    margin-top: 10px;
+}
+#buildOption2{
+    margin-top: 10px;
+}
+#heading{
+    margin-top: 10px;
+}
+#reqLabel{
+    margin-top: 10px;
+}
+.invalid {
+    border: red 1px solid;
+}
+#invalidEmail{
+    font-size: small;
+    color: red;
+}
+
+#invalidStore{
+    font-size: small;
+    color: red;
+}
+#container{
+    font-family: 'Athelas', Times, serif;
+}
